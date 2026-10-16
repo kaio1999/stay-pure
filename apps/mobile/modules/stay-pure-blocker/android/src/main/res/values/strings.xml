@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="stay_pure_ink">#070B16</color>
+  <color name="stay_pure_gold">#D4AF77</color>
+  <color name="stay_pure_parchment">#F4EDE1</color>
+  <color name="stay_pure_muted">#A39B8C</color>
+
+  <string name="shield_channel">Escudo Stay Pure</string>
+  <string name="shield_title">Stay Pure está guardando você</string>
+  <string name="shield_text">O filtro de pureza está ativo neste aparelho.</string>
+  <string name="shield_paused_title">Escudo pausado no Android Auto</string>
+  <string name="shield_paused_text">O filtro volta sozinho quando você desconectar do carro.</string>
+  <string name="interrupted_kicker">Você foi guardado</string>
+  <string name="interrupted_pray">Orar agora</string>
+  <string name="interrupted_cta">Ir ao texto de hoje</string>
+  <string name="interrupted_prayer">Senhor, cria em mim um coração puro. Desvia os meus olhos da vaidade. Quero olhar para Ti.</string>
+  <string name="interrupted_snooze">Este destino fica em silêncio por 45 minutos.</string>
+
+  <string-array name="verse_ids">
+    <item>mt5-8</item>
+    <item>1ts4-3</item>
+    <item>1co6-18</item>
+    <item>sl119-9</item>
+    <item>sl51-10</item>
+    <item>fp4-8</item>
+    <item>2tm2-22</item>
+    <item>job31-1</item>
+    <item>pv4-23</item>
+    <item>rm12-1</item>
+    <item>gl5-16</item>
+    <item>1pe1-16</item>
+    <item>cl3-5</item>
+    <item>sl101-3</item>
+    <item>hb12-14</item>
+    <item>ef5-3</item>
+    <item>sl24-4</item>
+    <item>tt2-12</item>
+  </string-array>
+
+  <string-array name="verse_refs">
+    <item>Mateus 5:8</item>
+    <item>1 Tessalonicenses 4:3</item>
+    <item>1 Coríntios 6:18</item>
+    <item>Salmo 119:9</item>
+    <item>Salmo 51:10</item>
+    <item>Filipenses 4:8</item>
+    <item>2 Timóteo 2:22</item>
+    <item>Jó 31:1</item>
+    <item>Provérbios 4:23</item>
+    <item>Romanos 12:1</item>
+    <item>Gálatas 5:16</item>
+    <item>1 Pedro 1:16</item>
+    <item>Colossenses 3:5</item>
+    <item>Salmo 101:3</item>
+    <item>Hebreus 12:14</item>
+    <item>Efésios 5:3</item>
+    <item>Salmo 24:4</item>
+    <item>Tito 2:12</item>
+  </string-array>
+
+  <string-array name="verse_texts">
+    <item>Bem-aventurados os limpos de coração, porque eles verão a Deus.</item>
+    <item>Porque esta é a vontade de Deus, a vossa santificação: que vos abstenhais da prostituição.</item>
+    <item>Fugi da prostituição. Todo o pecado que o homem comete é fora do corpo; mas o que se prostitui peca contra o seu próprio corpo.</item>
+    <item>Como purificará o jovem o seu caminho? Observando-o conforme a tua palavra.</item>
+    <item>Cria em mim, ó Deus, um coração puro, e renova em mim um espírito reto.</item>
+    <item>Tudo o que é verdadeiro, tudo o que é puro, tudo o que é amável… nisso pensai.</item>
+    <item>Foge também das paixões da mocidade, e segue a justiça, a fé, o amor e a paz.</item>
+    <item>Fiz concerto com os meus olhos; como, pois, os fixaria numa virgem?</item>
+    <item>Sobre tudo o que se deve guardar, guarda o teu coração, porque dele procedem as fontes da vida.</item>
+    <item>Apresenteis o vosso corpo em sacrifício vivo, santo e agradável a Deus.</item>
+    <item>Andai em Espírito, e não cumprireis a concupiscência da carne.</item>
+    <item>Sede santos, porque eu sou santo.</item>
+    <item>Mortificai, pois, os vossos membros, que estão sobre a terra: a prostituição, a impureza.</item>
+    <item>Não porei coisa má diante dos meus olhos.</item>
+    <item>Segui a paz com todos, e a santificação, sem a qual ninguém verá o Senhor.</item>
+    <item>A prostituição e toda a impureza nem ainda se nomeie entre vós, como convém a santos.</item>
+    <item>Aquele que é limpo de mãos e puro de coração… este receberá a bênção do Senhor.</item>
+    <item>Renunciando à impiedade e às concupiscências mundanas, vivamos sóbria, justa e piamente.</item>
+  </string-array>
+
+  <string-array name="verse_invites">
+    <item>Este caminho não leva à vida. Há um olhar que restaura — o Dele.</item>
+    <item>A vontade de Deus para você agora é santidade, não vergonha.</item>
+    <item>Fugir também é fé. Dê meia-volta. Você foi comprado por bom preço.</item>
+    <item>Troque a tela pela Palavra. O caminho se limpa assim.</item>
+    <item>Você não precisa fingir força. Peça um coração novo.</item>
+    <item>A paz mora no que é puro. Escolha o pensamento que edifica.</item>
+    <item>Não fique parado no desejo. Corra na direção de Cristo.</item>
+    <item>Renove o concerto agora. Os olhos podem servir ao Senhor.</item>
+    <item>O que você quase abriu feriria a nascente. Guarde o coração.</item>
+    <item>Seu corpo é altar, não mercadoria. Apresente-o de novo.</item>
+    <item>Respire. Ore. Ande. A carne não tem a última palavra.</item>
+    <item>A santidade de Deus é o seu convite, não a sua sentença.</item>
+    <item>Interrompa agora. Isso é vida, não perda.</item>
+    <item>Você acabou de ser guardado. Não volte a pôr o mal diante de si.</item>
+    <item>Há algo melhor do que aquele site: ver o Senhor.</item>
+    <item>Você foi chamado de santo. Viva à altura do nome.</item>
+    <item>Há bênção do outro lado desta recusa. Siga limpo.</item>
+    <item>A graça ensina a renunciar. Esta interrupção é graça.</item>
+  </string-array>
+</resources>

@@ -1,0 +1,24 @@
+# Resolvers DNS-over-HTTPS usados para furar filtros.
+# Ativados só no modo estrito do app.
+dns.google
+dns.google.com
+cloudflare-dns.com
+mozilla.cloudflare-dns.com
+chrome.cloudflare-dns.com
+security.cloudflare-dns.com
+family.cloudflare-dns.com
+dns.quad9.net
+dns9.quad9.net
+doh.opendns.com
+doh.family.opendns.com
+dns.nextdns.io
+anycast.dns.nextdns.io
+doh.cleanbrowsing.org
+adblock.doh.cleanbrowsing.org
+family-filter-dns.cleanbrowsing.org
+doh.dns.sb
+doh.pub
+dns.alidns.com
+doh.360.cn
+one.one.one.one
+1dot1dot1dot1.cloudflare-dns.com

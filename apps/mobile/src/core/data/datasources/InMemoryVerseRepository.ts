@@ -1,0 +1,124 @@
+import type { PurityVerse } from '../../domain/entities/models';
+import type { VerseRepository } from '../../domain/repositories/contracts';
+
+const VERSES: readonly PurityVerse[] = [
+  {
+    id: 'mt5-8',
+    reference: 'Mateus 5:8',
+    text: 'Bem-aventurados os limpos de coração, porque eles verão a Deus.',
+    invitation: 'Este caminho não leva à vida. Há um olhar que restaura — o Dele.',
+  },
+  {
+    id: '1ts4-3',
+    reference: '1 Tessalonicenses 4:3',
+    text: 'Porque esta é a vontade de Deus, a vossa santificação: que vos abstenhais da prostituição.',
+    invitation: 'A vontade de Deus para você agora é santidade, não vergonha.',
+  },
+  {
+    id: '1co6-18',
+    reference: '1 Coríntios 6:18',
+    text: 'Fugi da prostituição. Todo o pecado que o homem comete é fora do corpo; mas o que se prostitui peca contra o seu próprio corpo.',
+    invitation: 'Fugir também é fé. Dê meia-volta. Você foi comprado por bom preço.',
+  },
+  {
+    id: 'sl119-9',
+    reference: 'Salmo 119:9',
+    text: 'Como purificará o jovem o seu caminho? Observando-o conforme a tua palavra.',
+    invitation: 'Troque a tela pela Palavra. O caminho se limpa assim.',
+  },
+  {
+    id: 'sl51-10',
+    reference: 'Salmo 51:10',
+    text: 'Cria em mim, ó Deus, um coração puro, e renova em mim um espírito reto.',
+    invitation: 'Você não precisa fingir força. Peça um coração novo.',
+  },
+  {
+    id: 'fp4-8',
+    reference: 'Filipenses 4:8',
+    text: 'Tudo o que é verdadeiro, tudo o que é puro, tudo o que é amável... nisso pensai.',
+    invitation: 'A paz mora no que é puro. Escolha o pensamento que edifica.',
+  },
+  {
+    id: '2tm2-22',
+    reference: '2 Timóteo 2:22',
+    text: 'Foge também das paixões da mocidade, e segue a justiça, a fé, o amor e a paz.',
+    invitation: 'Não fique parado no desejo. Corra na direção de Cristo.',
+  },
+  {
+    id: 'job31-1',
+    reference: 'Jó 31:1',
+    text: 'Fiz concerto com os meus olhos; como, pois, os fixaria numa virgem?',
+    invitation: 'Renove o concerto agora. Os olhos podem servir ao Senhor.',
+  },
+  {
+    id: 'pv4-23',
+    reference: 'Provérbios 4:23',
+    text: 'Sobre tudo o que se deve guardar, guarda o teu coração, porque dele procedem as fontes da vida.',
+    invitation: 'O que você quase abriu feriria a nascente. Guarde o coração.',
+  },
+  {
+    id: 'rm12-1',
+    reference: 'Romanos 12:1',
+    text: 'Apresenteis o vosso corpo em sacrifício vivo, santo e agradável a Deus.',
+    invitation: 'Seu corpo é altar, não mercadoria. Apresente-o de novo.',
+  },
+  {
+    id: 'gl5-16',
+    reference: 'Gálatas 5:16',
+    text: 'Andai em Espírito, e não cumprireis a concupiscência da carne.',
+    invitation: 'Respire. Ore. Ande. A carne não tem a última palavra.',
+  },
+  {
+    id: '1pe1-16',
+    reference: '1 Pedro 1:16',
+    text: 'Sede santos, porque eu sou santo.',
+    invitation: 'A santidade de Deus é o seu convite, não a sua sentença.',
+  },
+  {
+    id: 'cl3-5',
+    reference: 'Colossenses 3:5',
+    text: 'Mortificai, pois, os vossos membros, que estão sobre a terra: a prostituição, a impureza.',
+    invitation: 'Interrompa agora. Isso é vida, não perda.',
+  },
+  {
+    id: 'sl101-3',
+    reference: 'Salmo 101:3',
+    text: 'Não porei coisa má diante dos meus olhos.',
+    invitation: 'Você acabou de ser guardado. Não volte a pôr o mal diante de si.',
+  },
+  {
+    id: 'hb12-14',
+    reference: 'Hebreus 12:14',
+    text: 'Segui a paz com todos, e a santificação, sem a qual ninguém verá o Senhor.',
+    invitation: 'Há algo melhor do que aquele site: ver o Senhor.',
+  },
+  {
+    id: 'ef5-3',
+    reference: 'Efésios 5:3',
+    text: 'A prostituição e toda a impureza nem ainda se nomeie entre vós, como convém a santos.',
+    invitation: 'Você foi chamado de santo. Viva à altura do nome.',
+  },
+  {
+    id: 'sl24-4',
+    reference: 'Salmo 24:4',
+    text: 'Aquele que é limpo de mãos e puro de coração... este receberá a bênção do Senhor.',
+    invitation: 'Há bênção do outro lado desta recusa. Siga limpo.',
+  },
+  {
+    id: 'tt2-12',
+    reference: 'Tito 2:12',
+    text: 'Renunciando à impiedade e às concupiscências mundanas, vivamos sóbria, justa e piamente.',
+    invitation: 'A graça ensina a renunciar. Esta interrupção é graça.',
+  },
+];
+
+export class InMemoryVerseRepository implements VerseRepository {
+  list(): readonly PurityVerse[] {
+    return VERSES;
+  }
+
+  pickInterruptionVerse(seed: number): PurityVerse {
+    const index = Math.abs(seed) % VERSES.length;
+    return VERSES[index];
+  }
+}

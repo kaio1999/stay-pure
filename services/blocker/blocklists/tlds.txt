@@ -1,0 +1,5 @@
+# TLDs exclusivamente adultos — bloqueio por sufixo.
+tld:xxx
+tld:porn
+tld:sex
+tld:adult

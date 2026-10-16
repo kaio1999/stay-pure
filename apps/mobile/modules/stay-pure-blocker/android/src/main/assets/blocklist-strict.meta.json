@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-10-16T20:56:50Z",
+  "domains": 53967,
+  "tlds": 4,
+  "sources": [
+    "core.txt",
+    "tlds.txt",
+    "doh.txt",
+    "remote-1.hosts",
+    "remote-2.hosts"
+  ]
+}

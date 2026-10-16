@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+
+  <queries>
+    <package android:name="com.google.android.projection.gearhead" />
+    <package android:name="com.google.android.gms" />
+    <intent>
+      <action android:name="androidx.car.app.connection.action.CAR_CONNECTION_UPDATED" />
+    </intent>
+  </queries>
+
+  <application>
+    <service
+      android:name="com.staypure.blocker.StayPureVpnService"
+      android:exported="false"
+      android:foregroundServiceType="specialUse"
+      android:permission="android.permission.BIND_VPN_SERVICE">
+      <intent-filter>
+        <action android:name="android.net.VpnService" />
+      </intent-filter>
+      <property
+        android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+        android:value="dns_content_filter" />
+    </service>
+
+    <activity
+      android:name="com.staypure.blocker.InterruptionActivity"
+      android:exported="false"
+      android:excludeFromRecents="true"
+      android:launchMode="singleTop"
+      android:showWhenLocked="true"
+      android:turnScreenOn="true"
+      android:theme="@style/StayPure.Interrupted" />
+
+    <activity
+      android:name="com.staypure.blocker.VpnConsentActivity"
+      android:exported="false"
+      android:theme="@style/StayPure.Interrupted" />
+
+    <service
+      android:name="com.staypure.blocker.StayPureCarPauseService"
+      android:exported="false"
+      android:foregroundServiceType="specialUse">
+      <property
+        android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+        android:value="resume_dns_filter_after_android_auto" />
+    </service>
+
+    <receiver
+      android:name="com.staypure.blocker.BootReceiver"
+      android:enabled="true"
+      android:exported="false">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+      </intent-filter>
+    </receiver>
+
+    <receiver
+      android:name="com.staypure.blocker.CarModeReceiver"
+      android:exported="true">
+      <intent-filter>
+        <action android:name="android.app.action.ENTER_CAR_MODE" />
+        <action android:name="android.app.action.EXIT_CAR_MODE" />
+        <action android:name="android.intent.action.DOCK_EVENT" />
+        <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+        <action android:name="android.hardware.usb.action.USB_ACCESSORY_DETACHED" />
+        <action android:name="androidx.car.app.connection.action.CAR_CONNECTION_UPDATED" />
+        <action android:name="com.google.android.gms.car.CONNECTED" />
+        <action android:name="com.google.android.gms.car.DISCONNECT" />
+        <action android:name="com.google.android.gms.car.DISCONNECTED" />
+        <action android:name="com.google.android.gms.car.intent.action.CAR_CONNECTION_STATUS" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

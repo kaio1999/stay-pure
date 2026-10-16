@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native generated / build
+apps/mobile/android/
+apps/mobile/ios/
+apps/mobile/.kotlin/
+apps/ios/build/
+build/
+.gradle/
+.cxx/
+*.apk
+*.aab
+
+# Secrets / signing
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.mobileprovision
+.env
+.env*.local
+!.env.example
+apps/mobile/credentials/
+
+# Local tooling
+apps/mobile/.claude/
+
+# Go
+services/blocker/bin/
+*.exe
+coverage.out
+
+# Watch (Node)
+services/accountability/accountability.json
+services/accountability/accountability.json.tmp
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.log
+*.tsbuildinfo
+npm-debug.*
+
+# Blocklist build artifacts (source lists are committed)
+services/blocker/dist/

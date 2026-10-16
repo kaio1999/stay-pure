@@ -1,0 +1,6 @@
+{
+  "platforms": ["android"],
+  "android": {
+    "modules": ["com.staypure.blocker.StayPureBlockerModule"]
+  }
+}

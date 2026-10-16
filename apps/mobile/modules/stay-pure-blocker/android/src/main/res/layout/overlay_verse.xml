@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/interruptedRoot"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/stay_pure_ink"
+  android:fillViewport="true">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="48dp"
+    android:paddingBottom="48dp">
+
+    <TextView
+      android:id="@+id/kicker"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/interrupted_kicker"
+      android:textAllCaps="true"
+      android:textColor="@color/stay_pure_gold"
+      android:textSize="14sp" />
+
+    <TextView
+      android:id="@+id/verse"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="28dp"
+      android:lineSpacingExtra="8dp"
+      android:textColor="@color/stay_pure_parchment"
+      android:textSize="22sp" />
+
+    <TextView
+      android:id="@+id/reference"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="18dp"
+      android:textAllCaps="true"
+      android:textColor="@color/stay_pure_gold"
+      android:textSize="14sp" />
+
+    <TextView
+      android:id="@+id/invite"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:lineSpacingExtra="4dp"
+      android:textColor="@color/stay_pure_parchment"
+      android:textSize="16sp" />
+
+    <TextView
+      android:id="@+id/prayer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="22dp"
+      android:lineSpacingExtra="4dp"
+      android:text="@string/interrupted_prayer"
+      android:textColor="@color/stay_pure_parchment"
+      android:textSize="17sp"
+      android:visibility="gone" />
+
+    <TextView
+      android:id="@+id/snooze"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="14dp"
+      android:text="@string/interrupted_snooze"
+      android:textColor="@color/stay_pure_gold"
+      android:textSize="14sp"
+      android:visibility="gone" />
+
+    <Button
+      android:id="@+id/continueButton"
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:layout_marginTop="36dp"
+      android:backgroundTint="@color/stay_pure_gold"
+      android:text="@string/interrupted_pray"
+      android:textAllCaps="false"
+      android:textColor="@color/stay_pure_ink" />
+  </LinearLayout>
+</ScrollView>
